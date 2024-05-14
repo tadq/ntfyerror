@@ -1,0 +1,4 @@
+github.com/AnthonyHewins/gotfy v0.0.9 h1:sB219O7HcpOs2KEO0hTG4g3dG74U6AGUGUFBqItnB8o=
+github.com/AnthonyHewins/gotfy v0.0.9/go.mod h1:q2orErDDpl9/gZ5L4oJhejb7TaP/eBdtkzjWDruNRlg=
+github.com/goccy/go-json v0.10.2 h1:CrxCmQqYDkv1z7lO7Wbh2HN93uovUHgrECaO5ZrCXAU=
+github.com/goccy/go-json v0.10.2/go.mod h1:6MelG93GURQebXPDq3khkgXZkazVtN9CRI+MGFi0w8I=
