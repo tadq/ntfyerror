@@ -2,7 +2,6 @@ package ntfyerror
 
 import (
 	"context"
-	"log"
 	"net/http"
 	"net/url"
 	"os"
@@ -41,7 +40,7 @@ func New(ntfyURL string) *NtfyServer {
 	}
 }
 
-func (s NtfyServer) SendError(err error, tags ...string) {
+func (s NtfyServer) SendError(err error, tags ...string) error {
 	_, errm := s.tp.SendMessage(context.Background(), &gotfy.Message{
 		Topic:    "alert",
 		Message:  err.Error(),
@@ -50,7 +49,5 @@ func (s NtfyServer) SendError(err error, tags ...string) {
 		Priority: gotfy.High,
 	})
 
-	if errm != nil {
-		log.Println(errm)
-	}
+	return errm
 }
